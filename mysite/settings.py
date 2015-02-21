@@ -92,7 +92,7 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
 
-DEBUG = False
+#DEBUG = False
 
 try:
     from .local_settings import *
