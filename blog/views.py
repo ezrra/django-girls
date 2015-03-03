@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post
 from django.utils import timezone 
 from .forms import PostForm
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 
 def post_list (request):
 	user = authenticate(username='e-zrra', password='password')
