@@ -4,6 +4,8 @@ from django.utils import timezone
 from .forms import PostForm
 
 def post_list (request):
+	user = authenticate(username='e-zrra', password='password')
+	login(request, user)
 	posts = Post.objects.all();
 	return render(request, 'blog/post_list.html', { 'posts' : posts })
 
